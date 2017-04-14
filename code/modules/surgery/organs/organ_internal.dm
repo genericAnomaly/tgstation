@@ -550,7 +550,9 @@
 	say_mod = "hisses"
 	taste_sensitivity = 10 // combined nose + tongue, extra sensitive
 
-/obj/item/organ/tongue/lizard/TongueSpeech(var/message)
+/obj/item/organ/tongue/lizard/ashwalker
+
+/obj/item/organ/tongue/lizard/ashwalker/TongueSpeech(var/message)
 	var/regex/lizard_hiss = new("s+", "g")
 	var/regex/lizard_hiSS = new("S+", "g")
 	if(copytext(message, 1, 2) != "*")

@@ -41,3 +41,5 @@
 	id = "ashlizard"
 	limbs_id = "lizard"
 	species_traits = list(MUTCOLORS,EYECOLOR,LIPS,NOBREATH,NOGUNS,DIGITIGRADE)
+	mutant_organs = list(/obj/item/organ/tongue/lizard/ashwalker)
+
