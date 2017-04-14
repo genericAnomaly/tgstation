@@ -18,9 +18,7 @@
 		if(do_after(user, 100, target = src))
 			broken = !broken
 			playsound(src.loc, 'sound/effects/sparks4.ogg', 50, 1)
-			var/datum/effect_system/spark_spread/s = new /datum/effect_system/spark_spread
-			s.set_up(5, 1, src)
-			s.start()
+			do_sparks(5, TRUE, src)
 			locked = FALSE // the locker will be unlocked regardless of it it's broken or not
 			update_icon()
 			user.visible_message("<span class='warning'>[user.name] has [broken ? "hacked open" : "repaired"] the [src]'s lock with the [I].</span>")
