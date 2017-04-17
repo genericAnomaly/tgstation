@@ -1,0 +1,26 @@
+"a" = (/turf/open/space/basic,/area/space)
+"b" = (/turf/open/floor/plating/asteroid/snow/airless,/area/ruin/walrus)
+"c" = (/obj/item/toy/snowball,/turf/open/floor/plating/asteroid/snow/airless,/area/ruin/walrus)
+"d" = (/turf/closed/indestructible/rock/snow/ice,/area/ruin/walrus)
+"e" = (/turf/open/floor/fakepit,/area/ruin/walrus)
+"f" = (/obj/item/toy/carpplushie,/turf/open/floor/fakepit,/area/ruin/walrus)
+"g" = (/turf/open/floor/plating/ice,/area/ruin/walrus)
+"h" = (/obj/structure/statue/space_walrus,/turf/open/floor/plating/ice,/area/ruin/walrus)
+"i" = (/obj/structure/statue/snow/snowman,/turf/open/floor/plating/asteroid/snow,/area/ruin/walrus)
+"j" = (/turf/open/floor/plating/asteroid/snow,/area/ruin/walrus)
+"k" = (/turf/open/floor/plasteel/stairs,/area/ruin/walrus)
+"l" = (/obj/item/weapon/reagent_containers/food/snacks/grown/koibeans,/turf/open/floor/fakepit,/area/ruin/walrus)
+"m" = (/obj/structure/mineral_door/transparent/diamond,/turf/open/floor/plating/asteroid/snow/atmosphere,/area/ruin/walrus)
+
+(1,1,1) = {"
+aaaaaabaaaaabbaaaaaa
+aaaaabbbaaabbbcaaaaa
+aababdddddddddbbaaaa
+aabbcdeeeeeefdbcaaaa
+aaaabdegghggedbbbaaa
+aaabcdegijigedbaaaaa
+aaabbdeekkkeedbbaaca
+baaabdleeeeeedcaabba
+aaacbdddmdmdddcaabaa
+aaaabbbababbaaaaaaaa
+"}
