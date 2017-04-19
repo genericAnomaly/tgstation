@@ -48,7 +48,7 @@
 	GLOB.timezoneOffset = text2num(time2text(0,"hh")) * 36000
 
 	if(config.sql_enabled)
-		if(!GLOB.dbcon.Connect())
+		if(!SSdbcore.Connect())
 			log_world("Your server failed to establish a connection with the database.")
 		else
 			log_world("Database connection established.")
@@ -210,6 +210,7 @@
 /world/proc/OnReboot(reason, feedback_c, feedback_r, round_end_sound_sent)
 	feedback_set_details("[feedback_c]","[feedback_r]")
 	log_game("<span class='boldannounce'>Rebooting World. [reason]</span>")
+	feedback_set("ahelp_unresolved", GLOB.ahelp_tickets.active_tickets.len)
 	if(GLOB.blackbox)
 		GLOB.blackbox.save_all_data_to_sql()
 	Master.Shutdown()	//run SS shutdowns
