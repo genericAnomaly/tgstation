@@ -14,18 +14,9 @@
 	else if(panel && istype(I, /obj/item/device/multitool))
 		add_fingerprint(user)
 
-		if(istype(user,/mob/living/carbon/human))
-			var/mob/living/carbon/human/H = user
-			var/shock = FALSE
-			if(H.gloves && istype(H.gloves,/obj/item/clothing/))
-				var/obj/item/clothing/gloves/G = H.gloves
-				if(G.siemens_coefficient > 0)
-					shock = TRUE
-			else if(H.dna && H.dna.species && H.dna.species.siemens_coeff > 0)
-				shock = TRUE
-
-			if(shock)
-				H.electrocute_act(10,src)
+		if(isliving(user))
+			var/mob/living/L = user
+			if(L.electrocute_act(10,src)) //if we are not electricity proof, return 
 				do_sparks(5, TRUE, src)
 				return
 
